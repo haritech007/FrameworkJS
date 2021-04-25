@@ -25,3 +25,8 @@ This release is the intial build. Has some limitations also:
 1. URL format: Support flat urls like /about, /contact, etc. No parametrized URLs supported for now (In Development).
 2. Performace not analysed for larger applications.
 3. Application context. Single storage to maintain application data across the application (In Development).
+5. 'server.js' file can be used on NodeJS environment for URL routing and to server static resources.
+
+# How to run
+1. Clone this to your machine
+2. Run 'npm install' to install all dependencies. Only 'express-js' is required as dependency to URL routing.
