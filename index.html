@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>FrameworkJS - The new JS SPA framework</title>
+		<link rel="stylesheet" href="/assets/css/base.css">
+		<meta name="title" content="FrameworkJS - The new JS SPA framework">
+		<meta name="keywords" content="Keywords will go here">
+		<meta name="description" content="Description will go here.">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>FrameworkJS</h1>
+				<nav>
+					<a class="app-link" href="/">Home</a>
+					<a class="app-link" href="/about">About</a>
+					<a class="app-link" href="/account">Account</a>
+					<a class="app-link" href="/posts">Posts</a>
+					<a class="app-link" href="/contact-us">Contact us</a>
+				</nav>
+			</div>
+		</header>
+		<div id="appContainer"></div>
+		<script type="text/javascript" src="/assets/AppConfig.js"></script>
+		<script type="text/javascript" src="/assets/framework/FrameworkJS.js"></script>
+		<script type="text/javascript">	
+			const Routes = [
+				{ 
+					path: '/', 
+					template: '/app/templates/Home.html', 
+					controller: '/app/controllers/Home.js' 
+				},
+				{ 
+					path: '/about', 
+					template: '/app/templates/About.html', 
+					controller: '/app/controllers/About.js' 
+				},
+				{ 
+					path: '/account', 
+					template: '/app/templates/Account.html', 
+					controller: '/app/controllers/Account.js' 
+				},
+				{ 
+					path: '/posts', 
+					template: '/app/templates/Posts.html', 
+					controller: '/app/controllers/Posts.js' 
+				},
+				{ 
+					path: '/contact-us', 
+					template: '/app/templates/Contact.html', 
+					controller: '/app/controllers/Contact.js' 
+				}
+			];
+			FrameworkJS.init('appContainer', Routes);
+		</script>
+	</body>
+</html>

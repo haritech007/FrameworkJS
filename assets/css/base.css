@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+	--dark-gray: #242424;
+	--light-gray: #cccccc;
+	--border-color: #cccccc;
+	--purple-color: #673ab7;
+	--light-color: #ffffff;
+}
+body {
+	margin: 0;
+	font-size: 1rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+header nav {
+	background-color: var(--dark-gray);
+}
+
+header nav a{
+	text-decoration: none;
+	padding: 15px;
+	color: var(--light-gray);
+	display: inline-block;
+}
+.container {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (min-width: 992px) {
+	.container {
+		max-width: 1400px
+	}
+}
+.card {
+	border: 1px var(--border-color) solid;
+	padding: 30px;
+	margin-right: -1px;
+	margin-bottom: -1px;
+	font-size: 1em;
+}
+.card img {
+	border-radius: 100px;
+}
+.card .title {
+	font-size: 1em;
+	margin: 30px 0 10px 0;
+}
+.card .sub-title {
+	font-size: 0.8em;
+}
+.btn {
+	padding: 12px 15px;
+	font-size: 1em;
+	background-color: var(--light-gray);
+	border: 0 none;
+	border-radius: 4px;
+}
+.btn.btn-primary {
+	background-color: var(--purple-color);
+	color: var(--light-color)
+}
+.form-group {
+	margin-bottom: 1em;
+}
+label {
+	font-size: 1em;
+	display: block;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+.form-control {
+	font-family: inherit;
+	font-size: 1em;
+	padding: 12px 15px;
+	border: 1px var(--border-color) solid;
+	border-radius: 4px;
+	width: 100%;
+}

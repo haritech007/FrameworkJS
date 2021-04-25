@@ -1,0 +1,30 @@
+<style>
+   #usersList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex: 1;
+   }
+
+   #usersList li {
+      padding: 0;
+      text-align: center;
+      width: 25%;
+   }
+</style>
+<div class="container">
+   <h2>Posts</h2>
+   <ul id="usersList"></ul>
+   <script type="text/template" id="usersList-template">
+      <li>
+         <div class="card">
+            <img src="{{imagePath}}" alt="{{imageAlt}}"/>
+            <h5 class="title">{{title}}</h5>
+            <div class="sub-title">{{email}}</div>
+         </div>
+      </li>
+   </script>
+</div>
